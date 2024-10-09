@@ -1,0 +1,34 @@
+@use '../../../assets/styles/variables.scss' as vars;
+
+.articleItem {
+	background: #ececec;
+	border: none;
+	border-radius: 16px;
+
+	height: 280px;
+	width: fit-content;
+
+	padding: 52px;
+
+	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+
+	.articleItem__title {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		h4 {
+			@include vars.h4;
+			color: vars.$purple-accent;
+		}
+		p {
+			@include vars.title-normal;
+		}
+	}
+}
+
+.articleItem:nth-child(odd) {
+	flex: 2 1 30%;
+}

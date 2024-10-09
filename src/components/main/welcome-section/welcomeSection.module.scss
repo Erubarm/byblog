@@ -1,0 +1,46 @@
+@use '../../../assets/styles/variables.scss' as vars;
+
+section.welcome {
+	min-height: 1189px;
+	height: 100vh;
+	background-image: url('../../../assets/img/welcomeSectionBackground.png');
+	background-repeat: no-repeat;
+
+	.welcome-section__inner {
+		padding-top: 386px;
+
+		h1 {
+			font-family: vars.$font-family;
+			font-weight: 700;
+			font-size: 146px;
+			line-height: 82%;
+			letter-spacing: -0.06em;
+			text-transform: uppercase;
+			color: vars.$text-color-white;
+		}
+
+		display: flex;
+		flex-direction: column;
+		gap: 46px;
+
+		.welcome-section__description {
+			display: flex;
+			flex-direction: row;
+			gap: 72px;
+
+			p {
+				color: vars.$purple-accent;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 110%;
+				letter-spacing: -0.04em;
+			}
+			.welcome-section__description__one {
+				width: 361px;
+			}
+			.welcome-section__description__two {
+				width: 289px;
+			}
+		}
+	}
+}

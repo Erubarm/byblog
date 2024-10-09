@@ -1,0 +1,49 @@
+@use '../../../assets/styles/variables.scss' as vars;
+
+.galleryItem {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	@include vars.title-upper;
+
+	img {
+		height: 490px;
+	}
+
+	.galleryItem__names {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.galleryItem__description {
+		padding: 18px 0;
+		border-top: 2px dashed vars.$text-color;
+		border-bottom: 2px dashed vars.$text-color;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		.galleryItem__description__text {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		.galleryItem__description__button {
+			width: 30px;
+			height: 30px;
+
+			background-color: inherit;
+			border: none;
+
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

@@ -1,9 +1,22 @@
 @use './normalize';
 @use './variables' as vars;
 @use '../../components/header/header.module';
+@use '../../components/main/welcome-section/welcomeSection.module.scss';
 
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button {
+	padding: 0;
+	margin: 0;
+}
 ul {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 body {
@@ -14,4 +27,26 @@ body {
 .container {
 	max-width: 1523px;
 	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 128px;
+}
+
+.title-container {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-bottom: 72px;
+
+	h2 {
+		@include vars.h2;
+	}
+	h3 {
+		@include vars.h3;
+		width: 951px;
+	}
 }

@@ -1,0 +1,28 @@
+@use '../../../assets/styles/variables.scss' as vars;
+
+.gallery__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.galleryList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 48px;
+	flex-wrap: wrap;
+
+	margin-bottom: 72px;
+}
+
+.gallery__buttonLink {
+	padding: 18px 186px;
+
+	border-radius: 10px;
+	border: none;
+
+	@include vars.title-normal;
+	background-color: vars.$purple-accent;
+	color: vars.$text-color-white;
+}

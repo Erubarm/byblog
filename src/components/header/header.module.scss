@@ -5,12 +5,28 @@
 	text-decoration: underline;
 }
 
+header {
+	position: absolute;
+
+	right: 0;
+	left: 0;
+}
+
 .header__inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 
 	margin-top: 48px;
+
+	ul {
+		font-family: vars.$font-family;
+		color: vars.$text-color;
+
+		display: flex;
+		flex-direction: row;
+		gap: 72px;
+	}
 }
 
 .logo-text {
@@ -19,15 +35,6 @@
 	font-weight: 800;
 	font-size: 40px;
 	color: vars.$purple-accent;
-}
-
-ul {
-	font-family: vars.$font-family;
-	color: vars.$text-color;
-
-	display: flex;
-	flex-direction: row;
-	gap: 72px;
 }
 
 .block-buttons {
