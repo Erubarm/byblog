@@ -1,0 +1,76 @@
+@use '../../assets/styles/variables.scss' as vars;
+
+.active-page {
+	color: vars.$purple-accent;
+	text-decoration: underline;
+}
+
+.header__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-top: 48px;
+}
+
+.logo-text {
+	font-family: vars.$font-secondary;
+	font-style: italic;
+	font-weight: 800;
+	font-size: 40px;
+	color: vars.$purple-accent;
+}
+
+ul {
+	font-family: vars.$font-family;
+	color: vars.$text-color;
+
+	display: flex;
+	flex-direction: row;
+	gap: 72px;
+}
+
+.block-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+
+	input[type='text'] {
+		border: none;
+		border-radius: 16px;
+		padding: 18px 12px;
+		outline: none;
+
+		font-weight: 400;
+		font-size: 16px;
+		color: #777;
+
+		background: #f2f2f2;
+
+		width: 267px;
+	}
+
+	.header__favorite-link {
+		padding: 17px;
+
+		border: none;
+		border-radius: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		background: #f2f2f2;
+	}
+
+	.header__auth-link {
+		border-radius: 10px;
+		border: none;
+
+		padding: 18px 50px;
+
+		color: vars.$text-color-white;
+		background-color: vars.$purple-accent;
+	}
+}

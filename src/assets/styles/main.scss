@@ -1,0 +1,17 @@
+@use './normalize';
+@use './variables' as vars;
+@use '../../components/header/header.module';
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	background-color: #ffff;
+	font-family: vars.$font-family;
+}
+
+.container {
+	max-width: 1523px;
+	margin: 0 auto;
+}
