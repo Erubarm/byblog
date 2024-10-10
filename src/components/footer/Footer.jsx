@@ -61,13 +61,15 @@ function Footer() {
 							<h4>Соцсети</h4>
 							<ul>
 								<li>
-									<a href='#!'>Вконтакте</a>
+									<a href='https://vk.com/veloxy'>Вконтакте</a>
 								</li>
 								<li>
-									<a href='#!'>Телеграм</a>
+									<a href='https://t.me/evrikazavidovo'>Телеграм</a>
 								</li>
 								<li>
-									<a href='#!'>YouTube</a>
+									<a href='https://www.instagram.com/evrika.zavidovo?igsh=cno0bXNlOXo3eGZ3'>
+										Instagram
+									</a>
 								</li>
 							</ul>
 						</div>
