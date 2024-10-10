@@ -13,6 +13,10 @@ button {
 	padding: 0;
 	margin: 0;
 }
+
+button {
+	cursor: pointer;
+}
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -27,6 +31,7 @@ body {
 .container {
 	max-width: 1523px;
 	margin: 0 auto;
+	width: 100%;
 }
 
 section {

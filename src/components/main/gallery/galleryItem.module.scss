@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	flex: 1 1 30%;
 
 	@include vars.title-upper;
 

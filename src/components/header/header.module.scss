@@ -1,10 +1,5 @@
 @use '../../assets/styles/variables.scss' as vars;
 
-.active-page {
-	color: vars.$purple-accent;
-	text-decoration: underline;
-}
-
 header {
 	position: absolute;
 
@@ -19,13 +14,49 @@ header {
 
 	margin-top: 48px;
 
-	ul {
-		font-family: vars.$font-family;
-		color: vars.$text-color;
-
+	nav {
 		display: flex;
 		flex-direction: row;
-		gap: 72px;
+		align-items: center;
+
+		ul {
+			font-family: vars.$font-family;
+			color: vars.$text-color;
+
+			display: flex;
+			flex-direction: row;
+			gap: 72px;
+
+			li {
+				position: relative;
+				cursor: pointer;
+				text-align: center;
+			}
+			li::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background-color: currentColor;
+
+				transition: width 0.3s ease, color 0.3s ease;
+			}
+
+			li:hover::after {
+				width: 100%;
+			}
+
+			.active-page {
+				position: relative;
+				color: vars.$purple-accent;
+				padding-bottom: 2px;
+			}
+			.active-page::after {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -58,6 +89,7 @@ header {
 	}
 
 	.header__favorite-link {
+		cursor: pointer;
 		padding: 17px;
 
 		border: none;
@@ -72,6 +104,7 @@ header {
 	}
 
 	.header__auth-link {
+		cursor: pointer;
 		border-radius: 10px;
 		border: none;
 

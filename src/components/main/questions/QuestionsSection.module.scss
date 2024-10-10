@@ -1,0 +1,80 @@
+@use '../../../assets/styles/variables.scss' as vars;
+
+.questionsBlock {
+	@include vars.title-super-upper;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 60px;
+	justify-content: space-between;
+
+	.questionList {
+		display: flex;
+		flex: 2 1 100%;
+		flex-direction: column;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+.questionItem__description__active {
+	color: vars.$purple-accent;
+	width: 416px;
+
+	display: flex;
+	flex: 1 1 30%;
+}
+
+.questionItem__description {
+	display: none;
+}
+
+.questionItem {
+	cursor: pointer;
+	padding: 32px 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #c3c3c3;
+
+	border-top: 2px dashed #0a0020;
+	border-bottom: 2px dashed #0a0020;
+
+	button {
+		background-color: inherit;
+		border: none;
+
+		svg {
+			transition: color 0.3s ease, transform 0.3s ease;
+		}
+	}
+}
+
+.questionItem__active {
+	color: vars.$purple-accent;
+	padding: 32px 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border-top: 2px dashed #0a0020;
+	border-bottom: 2px dashed #0a0020;
+
+	transition: color 0.3s ease;
+
+	button {
+		background-color: inherit;
+		border: none;
+
+		svg {
+			transform: rotate(45deg);
+
+			transition: transform 0.3s ease;
+		}
+	}
+}
